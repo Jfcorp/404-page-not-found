@@ -1,0 +1,173 @@
+/* Custom Properties */
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #4F4F4F;
+    --body-font: 'Space Mono', monospace;
+    --logo-font: 'Inconsolata', monospace;
+    --footer-font: 'Montserrat', monospace;
+    --anchor-container: 1200px
+}
+
+
+/* Reset */
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Grid System */
+
+.container {
+    max-width: 90%;
+    width: var(--anchor-container);
+    margin: 20px auto;
+}
+
+
+/* Components */
+
+.btn {
+    border: none;
+    padding: 23px 43px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #333;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Helpers */
+
+.no-margin {
+    margin: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.no-margin-left {
+    margin-left: 0;
+}
+
+.no-margin-right {
+    margin-right: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* Page Styles */
+
+main>h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: -0.035em;
+}
+
+footer {
+    width: 100%;
+    padding: 20px auto;
+    position: fixed;
+    bottom: 0;
+    font-family: var(--footer-font);
+    font-size: 0.875rem;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: var(--logo-font);
+    font-weight: bold;
+    color: var(--secondary-color);
+    letter-spacing: -0.08em;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside>img {
+    width: 80%;
+}
+
+
+/* Media Querys */
+
+@media screen and (min-width: 576px) {
+    footer {
+        position: relative;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        margin-bottom: 100px;
+    }
+    .home {
+        display: flex;
+        align-items: center;
+        min-height: 100%;
+    }
+    .home>.container {
+        display: flex;
+        align-items: center;
+    }
+    aside {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    main>h1 {
+        font-size: 60px;
+        line-height: 95px;
+    }
+    main>p {
+        width: 65%;
+        font-size: 18px;
+        color: var(--secondary-color);
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
