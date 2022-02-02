@@ -11,7 +11,7 @@ _Solution for a challenge from_ - [Devchallenges.io](http://devchallenges.io)
 
 ![thumbnail](https://i.ibb.co/F0tZS2r/404.png)
 
-### You can see the demo in the following link:  [Demo](https://github.com/Jfcorp/Gulp-Jade-Sass-BrowserSync)
+### You can see the demo in the following link:  [Demo](https://jfcorp.github.io/404-page-not-found/)
 
 ## Built with
 - [Html](https://developer.mozilla.org/es/docs/Web/HTML)
